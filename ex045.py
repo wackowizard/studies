@@ -19,9 +19,6 @@ while True:
             print(' ~ Ué, mas você nem tentou jogar, seu safado!')
         break
 
-    elif jogador == 'sair' and vitórias == 0 and derrotas == 0 and empates == 0:
-        print('Ué, nem jogou seu vigarista...')
-
     if jogador not in opções:
         print('Escolha inválida. Tente novamente')
         continue
