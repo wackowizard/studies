@@ -1,5 +1,6 @@
 numero = int(input('Digite um número: '))
 razao = int(input('Digite a razão: '))
-for i in range (0, 10, 1):
-    numero += razao
-    print(f'{numero}')
+décimo = numero + (10 - 1) * razao
+for i in range (numero, décimo + razao, razao):
+    print(i, end= ' ➜ ')
+print('ACABOU!')

@@ -1,4 +1,4 @@
-frase = input('Digite uma frase para ver se é palíndromo: ').lower().replace(' ', '')
+frase = input('Digite uma frase para ver se é palíndromo: ').upper().replace(' ', '')
 invertido = ''
 for i in range(len(frase) -1, -1, -1):
     invertido += frase[i]
