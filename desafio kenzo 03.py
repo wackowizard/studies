@@ -1,6 +1,6 @@
 numero = int(input('Digite um número inteiro: '))
 
-for asterisco in range(numero, 1, -1):
+for asterisco in range(numero, 0, -1):
     espacos = numero - asterisco
 
     linha = ' ' * espacos + '*' * asterisco
