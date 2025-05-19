@@ -4,15 +4,20 @@ numero = randint(0, 10)
 
 tentativas = 0
 palpite = ''
+print('Eu pensei em um número de 0 a 10.')
 while numero != palpite:
-    palpite = int(input('Eu pensei em um número de 0 a 10. Tente adivinhar qual foi: '))
+    palpite = int(input('Tente adivinhar qual foi: '))
     if palpite > 10:
         print('Tente um número entre 0 e 10.')
-    if numero != palpite:
-        print(f'Não é {palpite}. Tente novamente! ')
+    elif numero != palpite:
+        if palpite > numero:
+            print(f'Não é {palpite}, é menos... Tente novamente! ')
+        else:
+            print(f'Não é {palpite}, é mais... Tente novamente! ')
         tentativas += 1
-    if numero == palpite:
+    elif numero == palpite:
         tentativas += 1
+
 if tentativas == 1:
     print(f'GÊNIO!!! Eu realmente tinha pensado em {numero}! Você precisou de apenas {tentativas} tentativa para acertar!!')
 elif tentativas == 3:

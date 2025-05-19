@@ -4,6 +4,7 @@ pa = numero
 contador = 10
 
 while contador > 0:
-    print(f'{pa}')
+    print(f'{pa} -> ', end='')
     pa += razao
     contador -= 1
+print('FIM')

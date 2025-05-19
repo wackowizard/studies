@@ -1,6 +1,6 @@
 sexo = ''
 while sexo == 'M' or 'F':
-    sexo = input('Digite seu sexo (F ou M): ').upper()
+    sexo = input('Digite seu sexo (F ou M): ').upper().strip()
     if sexo == 'M':
         print(f'Legal, seu sexo é masculino\n')
     elif sexo == 'F':

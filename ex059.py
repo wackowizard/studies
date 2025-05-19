@@ -4,7 +4,7 @@ while opcao != 0:
     numero_2 = float(input('Digite o segundo número: '))
 
     print('[1] somar\n[2] multiplicar\n[3] dividir\n[4] maior\n[5] novos números\n[0] sair do programa')
-    opcao = int(input('Escolha: '))
+    opcao = int(input('>>>> Digite a opção escolhida: '))
 
     if opcao == 1:
         print(f'{numero_1:.0f} + {numero_2:.0f} = {numero_1 + numero_2:.0f}\n')
@@ -24,9 +24,9 @@ while opcao != 0:
             print(f'O número {numero_2:.0f} é maior que o número {numero_1:.0f}\n')
 
     elif opcao == 5:
-        print('')
+        print('\nOk, escolha novos valores: \n')
 
     elif opcao > 5 or opcao < 0:
-        print('Tente um número válido...\n')
+        print('Tente uma opção válida...\n')
 
 print('Calculadora encerrada. Obrigado por usar!')
