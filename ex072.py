@@ -10,3 +10,4 @@ while True:
     if continuar == 'N':
         print('Encerrando o programa. Até logo!')
         break
+        g
